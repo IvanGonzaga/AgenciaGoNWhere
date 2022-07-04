@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Agência de Viagens - GoNWhere</title>
+</head>
+
+<body>
+    <nav class="nav navbar navbar-expand-md sticky-top" style="background-color: #67cce4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./"><img src="./_images/logo2.png" height="40px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="nav navbar-nav nav-pills me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" style="width:max-content; padding: 10px;" href="./">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" style="width:max-content; padding: 10px;" href="./servicos.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" style="width:max-content; padding: 10px;" href="./contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-success dropdown-toggle" style="width:max-content; padding: 10px; margin-left:5px" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span>Login</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" onclick="loginSuccess()">Login</a>
+                                    <script>
+                                        function loginSuccess() {
+                                            alert('Login efetuado com sucesso')
+                                        }
+                                    </script>
+                                </li>
+
+                                <li><a class="dropdown-item" onclick="logoutSuccess()">Logout</a>
+                                    <script>
+                                        function logoutSuccess() {
+                                            alert('Logout efetuado com sucesso')
+                                        }
+                                    </script>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./cadastro.html">Cadastrar</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./_images/logo-slide.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./_images/destinos1-fernando-noronha.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fernando de Noronha</h5>
+                        <p>Descrição Fernando de Noronha</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./_images/destino1-jalapao.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Jalapão</h5>
+                        <p>Descrição Jalapão</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./_images/destino1-bonito.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bonito</h5>
+                        <p>Descrição Bonito</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./_images/destino1-maragogi.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Maragogi</h5>
+                        <p>Descrição Maragogi</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        <div class="container">
+            <hr class="border-primary border-3 opacity-30">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet repellat labore assumenda id quam,
+                perferendis corrupti consectetur voluptates, incidunt quibusdam porro doloremque vitae quod. Placeat
+                optio inventore enim dolore quaerat.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet repellat labore assumenda id quam,
+                perferendis corrupti consectetur voluptates, incidunt quibusdam porro doloremque vitae quod. Placeat
+                optio inventore enim dolore quaerat.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet repellat labore assumenda id quam,
+                perferendis corrupti consectetur voluptates, incidunt quibusdam porro doloremque vitae quod. Placeat
+                optio inventore enim dolore quaerat.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet repellat labore assumenda id quam,
+                perferendis corrupti consectetur voluptates, incidunt quibusdam porro doloremque vitae quod. Placeat
+                optio inventore enim dolore quaerat.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet repellat labore assumenda id quam,
+                perferendis corrupti consectetur voluptates, incidunt quibusdam porro doloremque vitae quod. Placeat
+                optio inventore enim dolore quaerat.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet repellat labore assumenda id quam,
+                perferendis corrupti consectetur voluptates, incidunt quibusdam porro doloremque vitae quod. Placeat
+                optio inventore enim dolore quaerat.
+            </h1>
+        </div>
+    </main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
