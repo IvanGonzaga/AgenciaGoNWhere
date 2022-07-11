@@ -1,7 +1,11 @@
-.texto-home{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.texto-home {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.bgcolorag{
-    background-color:#67cce4;
+.bgcolorag {
+    background-color: #67cce4;
+}
+
+.bgimgag {
+    background-image: url(./_images/bg_lightblue.jpeg);
 }

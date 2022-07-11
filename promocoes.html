@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Agência de Viagens - GoNWhere</title>
 </head>
+
 <body>
     <nav class="nav navbar navbar-expand-md sticky-top bgcolorag">
         <div class="container-fluid">
@@ -25,33 +27,97 @@
                         <a class="nav-link text-white" style="width:max-content; padding: 10px;" href="./">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" style="width:max-content; padding: 10px;" href="./destinos.html">Destinos</a>
+                        <a class="nav-link text-white" style="width:max-content; padding: 10px;"
+                            href="./destinos.html">Destinos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white active" style="width:max-content; padding: 10px;" href="./promocoes.html">Promoções</a>
+                        <a class="nav-link text-white active" style="width:max-content; padding: 10px;"
+                            href="./promocoes.html">Promoções</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" style="width:max-content; padding: 10px;" href="./contato.html">Contato</a>
+                        <a class="nav-link text-white" style="width:max-content; padding: 10px;"
+                            href="./contato.html">Contato</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
     </nav>
+    <br />
     <main>
         <div class="container">
-            <h1>
-                Página de Promoções
-            </h1>
+            <div class="container-fluid">
+                <h2>Pacotes especiais para a temporada...</h2>
+            </div><br />
+            <div class="accordion accordion-flush" id="accordionFlush">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <h2 class="text-center">Salvador</h2>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlush">
+                        <div class="accordion-body">
+                            <img class="rounded" src="./_images/promo_dest_salvador.webp" width="300px">
+                            <p><strong>Salvador,</strong> a capital do estado da Bahia no nordeste do Brasil, é
+                                conhecida pela arquitetura colonial portuguesa, pela cultura afrobrasileira e pelo
+                                litoral tropical. O bairro do Pelourinho é seu coração histórico, com vielas de
+                                paralelepípedo terminando em praças grandes, prédios coloridos e igrejas barrocas, como
+                                São Francisco, com trabalhos em madeira revestidos com ouro.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h2 class="text-center">Fortaleza</h2>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlush">
+                        <div class="accordion-body">
+                            <img class="rounded" src="./_images/promo_dest_fortaleza.webp" width="300px">
+                            <p><strong>Fortaleza</strong> é a capital do estado do Ceará, no Nordeste brasileiro. A
+                                cidade é conhecida por suas praias, com falésias vermelhas, palmeiras, dunas e lagoas.
+                                As tradições folclóricas da cidade podem ser vistas em apresentações de dança no Theatro
+                                José de Alencar, construção em estilo art nouveau inaugurada em 1910. Outro destaque
+                                arquitetônico é a Catedral Metropolitana, em estilo neogótico.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            <h2 class="text-center">Natal</h2>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+                        <div class="accordion-body">
+                            <img class="rounded" src="./_images/promo_dest_natal.webp" width="300px">
+                            <p><strong>Natal</strong> é a capital do estado de Rio Grande do Norte, na extremidade
+                                nordeste do Brasil. É conhecida pelas extensas dunas de areia costeiras e pelo Forte dos
+                                Reis Magos, em forma de estrela, uma fortaleza portuguesa do século XVI na foz do rio
+                                Potengi. A norte do rio, Genipabu é uma área de enormes dunas com uma lagoa de água
+                                doce. A autoestrada Via Costeira liga uma faixa de 15 km de praias a sul do forte.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-    <br/>
-<br/>
+    <br />
+    <br />
     <footer>
         <nav class="fixed-bottom text-center bgcolorag">
             <!-- Navbar content -->
             <p><a>Copyright © 2022 Agência GoNWhere</a></p>
-          </nav>
+        </nav>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
