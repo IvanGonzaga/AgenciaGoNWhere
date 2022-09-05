@@ -1,0 +1,35 @@
+
+CREATE TABLE cliente (
+    id_cliente INTEGER PRIMARY KEY,
+    nome VARCHAR(50),
+    cpf VARCHAR(11),
+    telefone VARCHAR(11),
+    endereco VARCHAR(50),
+    email VARCHAR(20)
+);
+
+
+CREATE TABLE viagem (
+    id_viagem INTEGER PRIMARY KEY,
+    preco DECIMAL(5,2),
+    periodo VARCHAR(30),
+    origem VARCHAR(30),
+    destino VARCHAR(30)
+);
+
+/* brModelo: */
+
+CREATE TABLE faz (
+    fk_viagem_id_viagem INTEGER,
+    fk_cliente_id_cliente INTEGER
+);
+ 
+ALTER TABLE faz ADD CONSTRAINT FK_faz_1
+    FOREIGN KEY (fk_viagem_id_viagem)
+    REFERENCES viagem (id_viagem)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE faz ADD CONSTRAINT FK_faz_2
+    FOREIGN KEY (fk_cliente_id_cliente)
+    REFERENCES cliente (id_cliente)
+    ON DELETE RESTRICT;
